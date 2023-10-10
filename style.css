@@ -1,79 +1,8 @@
 body {
   font-family: poppins !important;
+  background-color: #f5f5f5 !important;
 }
-
-/* css of  left-dash  of prasashan */
-
-.left-dash {
-  display: inline-flex;
-  height: 920px;
-  padding: 25px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.left-dash-content {
-  display: flex;
-  padding: 25px 25px 45px 25px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1 0 0;
-  border-radius: 6px;
-  background: #181100;
-}
-
-.left-dash-upper {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-left-dash-upper .logo {
-  width: 240px;
-}
-
-.left-dash-item {
-  display: flex;
-  width: 240px;
-  height: 48px;
-  padding: 0px 16px;
-  align-items: center;
-  gap: 12px;
-  border-radius: 6px;
-  background: var(--Pra-White);
-  transition: all 0.3s ease-in-out;
-}
-
-a.left-dash-item {
-  text-decoration: none;
-}
-
-.left-dash-item p {
-  color: #58667e;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19.6px;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 0px;
-}
-
-.left-dash-item:hover {
-  background: var(--Pra-Yellow);
-}
-
-.left-dash-item:hover p {
-  color: #fff;
-}
-
-/* end of css of left dash of prashashan */
-
+/* ================ Top-nav-section ================= */
 .Top-nav-section {
   margin: 10px 0px;
 }
@@ -93,18 +22,57 @@ a.left-dash-item {
   align-items: center;
   justify-content: center;
 }
+/* ================ End of Top-nav-section ================= */
 
+/* ==================== start of left-nav ================== */
 .left-nav {
   font-size: 20px;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   padding: 0px 0px !important;
-  background-color: #000000;
+  background-color: #f5f5f5;
   border-radius: 10px;
+}
+
+.left-nav-div {
+  width: 20%;
+}
+
+.left-nav-button {
+  display: flex !important;
+  align-items: center !important;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+}
+
+.left-nav-tab {
+  width: 100%;
 }
 .heading-title {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* ==================== End of left-nav ================== */
+
+/* ============== start of body section =================== */
+
+.text-area {
+  height: 500px;
+}
+
+/* ============== End of body section =================== */
+
+/*========== footer-section ===============*/
+
+.kit-wb-link{
+  text-decoration: none;
+  background-color: white;
+}
+
+.kit-footer{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
