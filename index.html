@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,12 +23,16 @@
   </head>
   <body>
     <section class="Top-nav-section">
-      <div class="container">
+      <div class="container m-0">
         <div class="row">
           <div class="col-md-4 logo-title-colu">
             <div class="logo-wrapper">
               <a href="#">
-                <h2 class="logo-title">Aayan Tools</h2>
+                <img
+                  class="logo-png"
+                  src="./Aayan logo transparent-01.png"
+                  alt="logo"
+                />
               </a>
             </div>
           </div>
@@ -35,18 +41,17 @@
           </div>
         </div>
       </div>
-      <hr />
     </section>
 
     <section class="body-section">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row h-100">
           <div class="col left-nav">
             <div
               class="d-flex align-items-center w-100 justify-content-between"
             >
               <div
-                class="nav flex-column nav-pills left-nav-div me-3"
+                class="nav flex-column nav-pills left-nav-div"
                 id="v-pills-tab"
                 role="tablist"
                 aria-orientation="vertical"
@@ -56,11 +61,11 @@
                   id="v-pills-home-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-unicode-to-preeti"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-home"
                   aria-selected="true"
                 >
+                  <i class="fa-solid btn-icon fa-pen-nib"></i>
                   Unicode to Preeti
                 </button>
                 <button
@@ -68,11 +73,11 @@
                   id="v-pills-profile-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-roman-to-nepali"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-profile"
                   aria-selected="true"
                 >
+                  <i class="fa-solid btn-icon fa-pencil"></i>
                   Roman to Nepali
                 </button>
                 <button
@@ -80,11 +85,11 @@
                   id="v-pills-preeti-to-unicode-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-preeti-to-unicode"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-preeti-to-unicode"
                   aria-selected="false"
                 >
+                  <i class="fa-solid btn-icon fa-pen-ruler"></i>
                   Preeti to Unicode
                 </button>
                 <button
@@ -92,11 +97,11 @@
                   id="v-pills-date-converter-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-date-converter"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-date-converter"
                   aria-selected="false"
                 >
+                  <i class="fa-regular btn-icon fa-calendar-days"></i>
                   Date Converter
                 </button>
                 <button
@@ -104,11 +109,11 @@
                   id="v-pills-weather-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-weather"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-weather"
                   aria-selected="false"
                 >
+                  <i class="fa-solid btn-icon fa-cloud-sun-rain"></i>
                   Weather
                 </button>
                 <button
@@ -116,23 +121,23 @@
                   id="v-pills-forex-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-forex"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-forex"
                   aria-selected="false"
                 >
-                  Forex
+                  <i class="fa-solid btn-icon fa-coins"></i>
+                  Gold/Silver Rates
                 </button>
                 <button
                   class="nav-link left-nav-button"
                   id="v-pills-market-view-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-market-view"
-                  type="button"
                   role="tab"
                   aria-controls="v-pills-market-view"
                   aria-selected="false"
                 >
+                  <i class="fa-solid btn-icon fa-money-bill-trend-up"></i>
                   Market View
                 </button>
               </div>
@@ -261,7 +266,54 @@
                   aria-labelledby="v-pills-weather-tab"
                   tabindex="0"
                 >
-                  ...
+                  <script>
+                    (function (d, s, id) {
+                      if (d.getElementById(id)) {
+                        if (window.__TOMORROW__) {
+                          window.__TOMORROW__.renderWidget();
+                        }
+                        return;
+                      }
+                      const fjs = d.getElementsByTagName(s)[0];
+                      const js = d.createElement(s);
+                      js.id = id;
+                      js.src =
+                        "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+                      fjs.parentNode.insertBefore(js, fjs);
+                    })(document, "script", "tomorrow-sdk");
+                  </script>
+
+                  <div
+                    class="tomorrow"
+                    data-location-id=""
+                    data-language="EN"
+                    data-unit-system="METRIC"
+                    data-skin="dark"
+                    data-widget-type="aqiMini"
+                    style="padding-bottom: 22px; position: relative"
+                  >
+                    <a
+                      href="https://www.tomorrow.io/weather-api/"
+                      rel="nofollow noopener noreferrer"
+                      target="_blank"
+                      style="
+                        position: absolute;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        pointer-events: none !important;
+                      "
+                    >
+                      <img
+                        alt="Powered by the Tomorrow.io Weather API"
+                        src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+                        width="250"
+                        height="18"
+                        display="none"
+                      />
+                    </a>
+                  </div>
                 </div>
                 <div
                   class="tab-pane fade"
@@ -270,7 +322,21 @@
                   aria-labelledby="v-pills-forex-tab"
                   tabindex="0"
                 >
-                  ...
+                  <iframe
+                    src="https://rat32.com/nepali-calendar/addons/gold-silver-rate.php"
+                    frameborder="0"
+                    scrolling="no"
+                    marginwidth="0"
+                    marginheight="0"
+                    style="
+                      border: none;
+                      overflow: hidden;
+                      width: 100%;
+                      max-width: 400px;
+                      height: 400px;
+                    "
+                    allowtransparency="true"
+                  ></iframe>
                 </div>
                 <div
                   class="tab-pane fade"
@@ -279,7 +345,23 @@
                   aria-labelledby="v-pills-market-view-tab"
                   tabindex="0"
                 >
-                  ...
+                  <iframe
+                    src="https://nepalicalendar.rat32.com/vegetable/embed.php"
+                    frameborder="0"
+                    scrolling="yes"
+                    marginwidth="0"
+                    marginheight="0"
+                    style="
+                      border: none;
+                      overflow: hidden;
+                      width: 100%;
+                      height: 500px;
+                      border-radius: 5px;
+                      padding: 0px;
+                      margin: 0px;
+                    "
+                    allowtransparency="true"
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -288,7 +370,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="footer-section">
       <div class="end-footer">
         <div class="container">
           <div class="end-footer-content">
@@ -298,7 +380,7 @@
                   <p>&copy २०२३</p>
                 </div>
                 <div class="social-link site-link">
-                  <a href="">Tech Kagaj</a>
+                  <a href="">Aayan Tools</a>
                 </div>
                 <div class="text">
                   <p>सर्वाधिकार सुरक्षित</p>
@@ -318,19 +400,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <a href="#" class="kit-wb-link">
-            <div class="kit-footer">
-              <div class="kit-logo">
-                <div class="kit-logo-container"></div>
-              </div>
-              <div class="kit-content"></div>
-            </div>
-          </a>
         </div>
       </div>
     </section>
