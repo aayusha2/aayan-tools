@@ -11,7 +11,7 @@
 }
 
 main {
-  height: calc(100vh - 182px);
+  height: calc(100vh - 171px);
 }
 body {
   font-family: poppins !important;
@@ -22,12 +22,15 @@ body {
   padding: 15px 0px;
   background-color: var(--primary-color);
 }
-.logo-title-colu {
-  display: flex;
+
+.top-header {
+  display: flex !important;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-wrapper {
+  width: 50%;
   padding: 0px 0px 0px 15px;
 }
 .logo-wrapper a {
@@ -37,17 +40,12 @@ body {
 .logo-png {
   background-color: white;
   border-radius: 10px;
-  width: 40%;
-  height: 30%;
-}
-.date-time-colu {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 30px !important;
+  width: 22%;
+  height: 100%;
 }
 .date-time {
-  color: rgb(255, 255, 255);
+  color: var(--white);
+  padding-right: 30px !important;
 }
 /* ================ End of Top-nav-section ================= */
 
@@ -61,7 +59,6 @@ body {
   padding: 0px 0px !important;
   background-color: #f5f5f5;
   border-radius: 10px;
-  /* height: 100%; */
 }
 
 .left-nav-div {
@@ -112,14 +109,79 @@ body {
 
 /* date converter tab */
 
+.date-converter {
+  padding-bottom: 100px;
+}
+
 .convert-btn {
-  color: #000000 !important;
+  color: black !important;
+}
+
+.convert-btn:hover {
+  background-color: var(--btn-hover-color) !important;
+  color: var(--white) !important;
 }
 
 .date-convert-tab {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.converter-display-field {
+  padding-top: 100px;
+}
+
+.convert-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px 50px !important;
+}
+
+.decor {
+  background: none;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #5e5e5e;
+}
+
+.convert-date-btn {
+  background-color: #59b6cd !important;
+  padding: 8px 26px !important;
+}
+
+.convert-date-btn:hover {
+  background-color: var(--btn-bg-color) !important;
+  color: var(--white) !important;
+}
+
+.display-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+
+.date-converted {
+  text-align: center;
+  border-bottom: 1px solid #d7d8d9;
+  padding-top: 10px;
+  padding-bottom: 45px;
+}
+
+.original-date {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.result-date {
+  font-size: 40px;
+  font-weight: 800;
+  color: gray;
 }
 
 /* ============== End of body section =================== */
@@ -183,4 +245,31 @@ body {
   color: #fff;
   margin: 0px;
   padding-right: 10px;
+}
+
+/* css for responsive view in mobile */
+
+@media screen and (max-width: 576px) {
+  .top-header {
+    display: block !important;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .date-time {
+    font-size: 10px;
+  }
+
+  .logo-png {
+    width: 20%;
+  }
+
+  .left-nav-div {
+    width: 100%;
+    font-size: 10px;
+  }
 }
