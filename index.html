@@ -53,18 +53,13 @@
 
     <main>
       <section class="body-section h-100">
-        <div class="container-fluid h-100">
-          <div class="row h-100">
-            <div class="col left-nav">
-              <div
-                class="d-flex align-items-center w-100 justify-content-between"
-              >
-                <div
-                  class="nav flex-column nav-pills left-nav-div"
-                  id="v-pills-tab"
-                  role="tablist"
-                  aria-orientation="vertical"
-                >
+        <!--    tab for mobile view responsive     -->
+
+        <!-- <div class="container mobile-view-container">
+          <div class="row">
+            <div class="col">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
                   <button
                     class="nav-link left-nav-button active"
                     id="v-pills-home-tab"
@@ -77,6 +72,8 @@
                     <span class="material-symbols-outlined"> edit </span>
                     Unicode to Preeti
                   </button>
+                </li>
+                <li class="nav-item" role="presentation">
                   <button
                     class="nav-link left-nav-button"
                     id="v-pills-profile-tab"
@@ -91,6 +88,129 @@
                     </span>
                     Roman to Nepali
                   </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link left-nav-button"
+                    id="v-pills-preeti-to-unicode-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-preeti-to-unicode"
+                    role="tab"
+                    aria-controls="v-pills-preeti-to-unicode"
+                    aria-selected="false"
+                  >
+                    <span class="material-symbols-outlined">
+                      design_services
+                    </span>
+                    Preeti to Unicode
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link left-nav-button"
+                    id="v-pills-date-converter-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-date-converter"
+                    role="tab"
+                    aria-controls="v-pills-date-converter"
+                    aria-selected="false"
+                  >
+                    <span class="material-symbols-outlined">
+                      calendar_month
+                    </span>
+                    Date Converter
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link left-nav-button"
+                    id="v-pills-weather-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-weather"
+                    role="tab"
+                    aria-controls="v-pills-weather"
+                    aria-selected="false"
+                  >
+                    <span class="material-symbols-outlined">
+                      partly_cloudy_day
+                    </span>
+                    Weather
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link left-nav-button"
+                    id="v-pills-forex-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-forex"
+                    role="tab"
+                    aria-controls="v-pills-forex"
+                    aria-selected="false"
+                  >
+                    <span class="material-symbols-outlined"> database </span>
+                    Gold/Silver Rates
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link left-nav-button"
+                    id="v-pills-market-view-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-market-view"
+                    role="tab"
+                    aria-controls="v-pills-market-view"
+                    aria-selected="false"
+                  >
+                    <span class="material-symbols-outlined"> payments </span>
+                    Market View
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- End of tab for mobile view responsive  -->
+
+        <div class="container-fluid laptop-view-container h-100">
+          <div class="row h-100">
+            <div class="col left-nav">
+              <div
+                class="d-flex align-items-center w-100 justify-content-between"
+              >
+                <div
+                  class="nav flex-column nav-pills left-nav-div"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link left-nav-button"
+                    id="v-pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-roman-to-nepali"
+                    role="tab"
+                    aria-controls="v-pills-profile"
+                    aria-selected="true"
+                  >
+                    <span class="material-symbols-outlined">
+                      border_color
+                    </span>
+                    Roman to Nepali
+                  </button>
+                  <button
+                    class="nav-link left-nav-button active"
+                    id="v-pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-unicode-to-preeti"
+                    role="tab"
+                    aria-controls="v-pills-home"
+                    aria-selected="true"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                    Unicode to Preeti
+                  </button>
+
                   <button
                     class="nav-link left-nav-button"
                     id="v-pills-preeti-to-unicode-tab"
@@ -175,13 +295,14 @@
                             >Unicode</label
                           >
                           <form name="nepali">
-                          <textarea
-                            class="form-control text-area"
-                            id="unicode_content" name="unicodebox"
-                            onkeyup="nepconv(); javascript:convert_to_Preeti();"
-                            rows="12"
-                          ></textarea>
-                        </form>
+                            <textarea
+                              class="form-control text-area"
+                              id="unicode_content"
+                              name="unicodebox"
+                              onkeyup="nepconv(); javascript:convert_to_Preeti();"
+                              rows="12"
+                            ></textarea>
+                          </form>
                         </div>
                         <div class="col-md-6">
                           <label
@@ -216,7 +337,7 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="input_tool" 
+                            id="input_tool"
                             oninput="replacePeriodWithDanda(this)"
                             rows="12"
                           ></textarea>
@@ -241,8 +362,8 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="preeti_text" 
-                            name="TextToConvert" 
+                            id="preeti_text"
+                            name="TextToConvert"
                             onkeyup="javascript:convert_to_unicode();"
                             rows="12"
                           ></textarea>
@@ -258,7 +379,7 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="unicode_text" 
+                            id="unicode_text"
                             name="ConvertedText"
                             rows="12"
                           ></textarea>
@@ -469,6 +590,7 @@
                           bottom: 0;
                           transform: translateX(-50%);
                           left: 50%;
+                          display: none !important;
                         "
                       >
                         <img
