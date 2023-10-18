@@ -15,7 +15,8 @@
   src: url(./Aakriti\ Regular.ttf);
 }
 
-#preeti-content, #preeti_text {
+#preeti-content,
+#preeti_text {
   font-family: Aakriti;
 }
 
@@ -294,7 +295,7 @@ body {
     font-size: 10px;
   }
 
-  .laptop-view-container {
+  /* .laptop-view-container {
     display: none !important;
-  }
+  } */
 }
