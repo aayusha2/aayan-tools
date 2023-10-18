@@ -202,7 +202,7 @@
                   >
                     <div class="col-md-12">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                           <label
                             for="exampleFormControlTextarea1"
                             class="form-label"
@@ -210,19 +210,8 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="exampleFormControlTextarea1"
-                            rows="12"
-                          ></textarea>
-                        </div>
-                        <div class="col-md-6">
-                          <label
-                            for="exampleFormControlTextarea1"
-                            class="form-label"
-                            >Nepali</label
-                          >
-                          <textarea
-                            class="form-control text-area"
-                            id="exampleFormControlTextarea1"
+                            id="input_tool" 
+                            oninput="replacePeriodWithDanda(this)"
                             rows="12"
                           ></textarea>
                         </div>
@@ -789,5 +778,7 @@
     <script src="./kit-unicode.js"></script>
     <script src="./kit-nepalityping.js"></script>
     <script src="./kit-preeti.js"></script>
+    <script src="./kit-roman1.js"></script>
+    <script src="./kit-roman2.js"></script>
   </body>
 </html>
