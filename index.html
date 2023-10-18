@@ -168,11 +168,14 @@
                             class="form-label"
                             >Unicode</label
                           >
+                          <form name="nepali">
                           <textarea
                             class="form-control text-area"
-                            id="exampleFormControlTextarea1"
+                            id="unicode_content" name="unicodebox"
+                            onkeyup="nepconv(); javascript:convert_to_Preeti();"
                             rows="12"
                           ></textarea>
+                        </form>
                         </div>
                         <div class="col-md-6">
                           <label
@@ -182,7 +185,8 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="exampleFormControlTextarea1"
+                            id="preeti-content"
+                            name="ConvertedText"
                             rows="12"
                           ></textarea>
                         </div>
@@ -242,9 +246,14 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="exampleFormControlTextarea1"
+                            id="preeti_text" 
+                            name="TextToConvert" 
+                            onkeyup="javascript:convert_to_unicode();"
                             rows="12"
                           ></textarea>
+                          <select id="text_or_html" style="display: none">
+                            <option selected="selected">Default Option</option>
+                          </select>
                         </div>
                         <div class="col-md-6">
                           <label
@@ -254,7 +263,8 @@
                           >
                           <textarea
                             class="form-control text-area"
-                            id="exampleFormControlTextarea1"
+                            id="unicode_text" 
+                            name="ConvertedText"
                             rows="12"
                           ></textarea>
                         </div>
@@ -775,5 +785,9 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./kit-unicode.js"></script>
+    <script src="./kit-nepalityping.js"></script>
+    <script src="./kit-preeti.js"></script>
   </body>
 </html>

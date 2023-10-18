@@ -10,6 +10,15 @@
   --footer-bg: #112f3b;
 }
 
+@font-face {
+  font-family: Aakriti;
+  src: url(./Aakriti\ Regular.ttf);
+}
+
+#preeti-content, #preeti_text {
+  font-family: Aakriti;
+}
+
 main {
   height: calc(100vh - 171px);
 }
