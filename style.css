@@ -20,6 +20,9 @@
 #preeti_text {
   font-family: Aakriti;
 }
+#input_tool{
+  font-family: Mukta;
+}
 
 main {
   height: calc(100vh - 171px);
