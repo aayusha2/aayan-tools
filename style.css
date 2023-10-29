@@ -257,9 +257,22 @@ body {
   padding-right: 10px;
 }
 
+@media only screen and (min-width: 992px) {
+  .mobile-view-container {
+    display: none !important;
+  }
+}
+
 /* css for responsive view in mobile */
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
+  .laptop-view-container {
+    display: none !important;
+  }
+
+  main {
+    height: 100%;
+  }
   .top-header {
     display: block !important;
   }
@@ -285,17 +298,7 @@ body {
     width: 50%;
   }
 
-  .left-nav {
-    display: flex;
-    flex-direction: column;
+  .left-nav-tab {
+    margin: 0px;
   }
-
-  .left-nav-div {
-    width: 100%;
-    font-size: 10px;
-  }
-
-  /* .laptop-view-container {
-    display: none !important;
-  } */
 }
