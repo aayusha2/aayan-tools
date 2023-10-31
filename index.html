@@ -55,7 +55,7 @@
 
         <div class="container mobile-view-container">
           <div class="row">
-            <div class="col">
+            <div class="col nav-div-mv">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button
@@ -67,7 +67,9 @@
                     aria-controls="v-pills-home"
                     aria-selected="true"
                   >
-                    <span class="material-symbols-outlined"> edit </span>
+                    <span class="material-symbols-outlined btn-icon">
+                      edit
+                    </span>
                     Unicode to Preeti
                   </button>
                 </li>
@@ -81,7 +83,7 @@
                     aria-controls="v-pills-profile"
                     aria-selected="true"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       border_color
                     </span>
                     Roman to Nepali
@@ -97,7 +99,7 @@
                     aria-controls="v-pills-preeti-to-unicode"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       design_services
                     </span>
                     Preeti to Unicode
@@ -113,7 +115,7 @@
                     aria-controls="v-pills-date-converter-mv"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       calendar_month
                     </span>
                     Date Converter
@@ -129,7 +131,7 @@
                     aria-controls="v-pills-weather-mv"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       partly_cloudy_day
                     </span>
                     Weather
@@ -145,8 +147,10 @@
                     aria-controls="v-pills-forex-mv"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined"> database </span>
-                    Gold/Silver Rates
+                    <span class="material-symbols-outlined btn-icon">
+                      database
+                    </span>
+                    Gold/Silver Rate
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -159,7 +163,9 @@
                     aria-controls="v-pills-market-view-mv"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined"> payments </span>
+                    <span class="material-symbols-outlined btn-icon">
+                      payments
+                    </span>
                     Market View
                   </button>
                 </li>
@@ -183,7 +189,7 @@
                         >
                         <form name="nepali">
                           <textarea
-                            class="form-control text-area"
+                            class="form-control text-area-mv"
                             id="unicode_content"
                             name="unicodebox"
                             onkeyup="nepconv(); javascript:convert_to_Preeti();"
@@ -198,7 +204,7 @@
                           >Preeti</label
                         >
                         <textarea
-                          class="form-control text-area"
+                          class="form-control text-area-mv"
                           id="preeti-content"
                           name="ConvertedText"
                           rows="12"
@@ -223,7 +229,7 @@
                           >Roman</label
                         >
                         <textarea
-                          class="form-control text-area"
+                          class="form-control text-area-mv"
                           id="input_tool"
                           oninput="replacePeriodWithDanda(this)"
                           rows="12"
@@ -248,7 +254,7 @@
                           >Preeti</label
                         >
                         <textarea
-                          class="form-control text-area"
+                          class="form-control text-area-mv"
                           id="preeti_text"
                           name="TextToConvert"
                           onkeyup="javascript:convert_to_unicode();"
@@ -265,7 +271,7 @@
                           >Unicode</label
                         >
                         <textarea
-                          class="form-control text-area"
+                          class="form-control text-area-mv"
                           id="unicode_text"
                           name="ConvertedText"
                           rows="12"
@@ -696,6 +702,7 @@
                   tabindex="0"
                 >
                   <iframe
+                    class="gold-silver-rate-tab"
                     src="https://rat32.com/nepali-calendar/addons/gold-silver-rate.php"
                     frameborder="0"
                     scrolling="no"
@@ -862,7 +869,7 @@
                       <div class="row">
                         <div class="col-md-6">
                           <label
-                            for="exampleFormControlTextarea1"
+                            for="exampleFormControlTextarea1 "
                             class="form-label"
                             >Unicode</label
                           >

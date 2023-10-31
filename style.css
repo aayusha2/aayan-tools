@@ -116,6 +116,7 @@ body {
 .text-area {
   height: 550px;
 }
+
 #exampleFormControlTextarea1:focus {
   box-shadow: none;
   border-color: #4f6982;
@@ -258,7 +259,7 @@ body {
 .design p {
   color: #fff;
   margin: 0px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -273,6 +274,8 @@ body {
   .laptop-view-container {
     display: none !important;
   }
+
+  /* top section css for mobile-view  */
 
   main {
     height: 100%;
@@ -302,7 +305,97 @@ body {
     width: 50%;
   }
 
+  /* body part css for mobile-view  */
+
   .left-nav-tab {
     margin: 0px;
+  }
+  .nav-div-mv .nav {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .btn-icon {
+    font-size: 22px !important;
+  }
+
+  .left-nav-button {
+    font-size: 12px !important;
+    width: 171px;
+  }
+
+  .text-area-mv {
+    margin-bottom: 50px;
+    height: 316px;
+  }
+
+  .convert-btn {
+    font-size: 10px !important;
+  }
+
+  .convert-btn.active {
+    font-size: 9px;
+  }
+
+  .date-convert-tab {
+    margin-top: 40px;
+  }
+
+  .date-converter {
+    padding-bottom: 0px;
+  }
+
+  .converter-display-field {
+    padding-top: 30px;
+  }
+  .convert-date {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .display-result {
+    padding: 30px 0px;
+  }
+
+  .gold-silver-rate-tab {
+    margin: 40px 0px 40px 0px !important;
+  }
+
+  /* start of footer css for mobile-view  */
+
+  .end-footer-content {
+    flex-direction: column;
+  }
+
+  .end-part1 {
+    flex-direction: column;
+  }
+
+  .end-part1 .social-link {
+    margin-bottom: 10px;
+  }
+
+  .end-part2 {
+    margin-top: 10px;
+  }
+
+  .design p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .end-part1 .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  img,
+  svg {
+    vertical-align: middle;
+  }
+
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
   }
 }
