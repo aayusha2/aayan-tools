@@ -51,714 +51,14 @@
 
     <main>
       <section class="body-section h-100">
-        <!--    tab for mobile view responsive     -->
-
-        <div class="container mobile-view-container">
-          <div class="row">
-            <div class="col nav-div-mv">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button active"
-                    id="v-pills-profile-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-unicode-to-preeti-mv"
-                    role="tab"
-                    aria-controls="v-pills-home"
-                    aria-selected="true"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      edit
-                    </span>
-                    Unicode to Preeti
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-roman-to-nepali-mv"
-                    role="tab"
-                    aria-controls="v-pills-profile"
-                    aria-selected="true"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      border_color
-                    </span>
-                    Roman to Nepali
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-preeti-to-unicode-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-preeti-to-unicode-mv"
-                    role="tab"
-                    aria-controls="v-pills-preeti-to-unicode"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      design_services
-                    </span>
-                    Preeti to Unicode
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-date-converter-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-date-converter-mv"
-                    role="tab"
-                    aria-controls="v-pills-date-converter-mv"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      calendar_month
-                    </span>
-                    Date Converter
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-weather-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-weather-mv"
-                    role="tab"
-                    aria-controls="v-pills-weather-mv"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      partly_cloudy_day
-                    </span>
-                    Weather
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-forex-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-forex-mv"
-                    role="tab"
-                    aria-controls="v-pills-forex-mv"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      database
-                    </span>
-                    Gold/Silver Rate
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-market-view-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-market-view-mv"
-                    role="tab"
-                    aria-controls="v-pills-market-view-mv"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      payments
-                    </span>
-                    Market View
-                  </button>
-                </li>
-              </ul>
-
-              <div class="tab-content left-nav-tab" id="v-pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="v-pills-unicode-to-preeti-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-home-tab"
-                  tabindex="0"
-                >
-                  <div class="col-md-12">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Unicode</label
-                        >
-                        <form name="nepali">
-                          <textarea
-                            class="form-control text-area-mv"
-                            id="unicode_content"
-                            name="unicodebox"
-                            onkeyup="nepconv(); javascript:convert_to_Preeti();"
-                            rows="12"
-                          ></textarea>
-                        </form>
-                      </div>
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Preeti</label
-                        >
-                        <textarea
-                          class="form-control text-area-mv"
-                          id="preeti-content"
-                          name="ConvertedText"
-                          rows="12"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-roman-to-nepali-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-profile-tab"
-                  tabindex="0"
-                >
-                  <div class="col-md-12">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Roman</label
-                        >
-                        <textarea
-                          class="form-control text-area-mv"
-                          id="input_tool"
-                          oninput="replacePeriodWithDanda(this)"
-                          rows="12"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-preeti-to-unicode-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-preeti-to-unicode-tab"
-                  tabindex="0"
-                >
-                  <div class="col-md-12">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Preeti</label
-                        >
-                        <textarea
-                          class="form-control text-area-mv"
-                          id="preeti_text"
-                          name="TextToConvert"
-                          onkeyup="javascript:convert_to_unicode();"
-                          rows="12"
-                        ></textarea>
-                        <select id="text_or_html" style="display: none">
-                          <option selected="selected">Default Option</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
-                          >Unicode</label
-                        >
-                        <textarea
-                          class="form-control text-area-mv"
-                          id="unicode_text"
-                          name="ConvertedText"
-                          rows="12"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane date-converter fade"
-                  id="v-pills-date-converter-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-date-converter-tab"
-                  tabindex="0"
-                >
-                  <div class="col-md-12">
-                    <nav>
-                      <div
-                        class="nav date-convert-tab nav-tabs"
-                        id="nav-tab"
-                        role="tablist"
-                      >
-                        <button
-                          class="nav-link active convert-btn"
-                          id="nav-home-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#nav-home"
-                          role="tab"
-                          aria-controls="nav-home"
-                          aria-selected="true"
-                        >
-                          Convert to English (AD)
-                        </button>
-                        <button
-                          class="nav-link convert-btn"
-                          id="nav-profile-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#nav-profile"
-                          role="tab"
-                          aria-controls="nav-profile"
-                          aria-selected="false"
-                        >
-                          Convert to Nepali (BS)
-                        </button>
-                      </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                      <div
-                        class="tab-pane fade show active"
-                        id="nav-home"
-                        role="tabpanel"
-                        aria-labelledby="nav-home-tab"
-                        tabindex="0"
-                      >
-                        <div class="converter-display-field">
-                          <div class="row d-flex select-item">
-                            <div
-                              class="col-md-12 convert-to-english convert-date"
-                            >
-                              <select
-                                id="month"
-                                name="txt-month"
-                                class="month form-select decor"
-                                size="1"
-                              >
-                                <option value="">Baishak</option>
-                                <option value="">Jestha</option>
-                                <option value="">Asar</option>
-                                <option value="">Shrawan</option>
-                                <option value="">Bhadra</option>
-                                <option value="">Ashwin</option>
-                                <option value="">Kartik</option>
-                                <option value="">Mangsir</option>
-                                <option value="">Poush</option>
-                                <option value="">Magh</option>
-                                <option value="">Falgun</option>
-                                <option value="">Chaitra</option>
-                              </select>
-                              <select
-                                id="day"
-                                name="txt-day"
-                                class="month-day form-select decor"
-                                size="1"
-                              >
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                                <option value="">7</option>
-                                <option value="">8</option>
-                                <option value="">9</option>
-                                <option value="">10</option>
-                                <option value="">11</option>
-                                <option value="">12</option>
-                                <option value="">13</option>
-                                <option value="">14</option>
-                                <option value="">15</option>
-                                <option value="">16</option>
-                                <option value="">17</option>
-                                <option value="">18</option>
-                                <option value="">19</option>
-                                <option value="">20</option>
-                                <option value="">21</option>
-                                <option value="">22</option>
-                                <option value="">23</option>
-                                <option value="">24</option>
-                                <option value="">25</option>
-                                <option value="">26</option>
-                                <option value="">27</option>
-                                <option value="">28</option>
-                                <option value="">29</option>
-                                <option value="">30</option>
-                                <option value="">31</option>
-                                <option value="">32</option>
-                              </select>
-                              <select
-                                id="year"
-                                name="txt-year"
-                                class="month-day form-select decor"
-                                size="1"
-                              >
-                                <option value="">2000</option>
-                                <option value="">2001</option>
-                                <option value="">2002</option>
-                                <option value="">2003</option>
-                                <option value="">2004</option>
-                                <option value="">2005</option>
-                                <option value="">2006</option>
-                                <option value="">2007</option>
-                                <option value="">2008</option>
-                                <option value="">2009</option>
-                                <option value="">2009</option>
-                                <option value="">2011</option>
-                                <option value="">2012</option>
-                                <option value="">2013</option>
-                                <option value="">2014</option>
-                                <option value="">2015</option>
-                                <option value="">2016</option>
-                                <option value="">2017</option>
-                                <option value="">2018</option>
-                                <option value="">2019</option>
-                                <option value="">2020</option>
-                                <option value="">2021</option>
-                                <option value="">2022</option>
-                                <option value="">2023</option>
-                                <option value="">2024</option>
-                                <option value="">2025</option>
-                                <option value="">2026</option>
-                                <option value="">2027</option>
-                                <option value="">2028</option>
-                                <option value="">2029</option>
-                                <option value="">2030</option>
-                                <option value="">2031</option>
-                                <option value="">2032</option>
-                                <option value="">2033</option>
-                                <option value="">2034</option>
-                                <option value="">2035</option>
-                                <option value="">2036</option>
-                                <option value="">2037</option>
-                                <option value="">2038</option>
-                                <option value="">2039</option>
-                                <option value="">2040</option>
-                                <option value="">2041</option>
-                                <option value="">2042</option>
-                                <option value="">2043</option>
-                                <option value="">2044</option>
-                                <option value="">2045</option>
-                                <option value="">2046</option>
-                                <option value="">2047</option>
-                                <option value="">2048</option>
-                                <option value="">2049</option>
-                                <option value="">2050</option>
-                                <option value="">2051</option>
-                                <option value="">2052</option>
-                              </select>
-                              <div class="convert-to-english-btn">
-                                <button
-                                  class="convert-date-btn btn"
-                                  id="convertdate"
-                                >
-                                  Convert
-                                </button>
-                              </div>
-                            </div>
-                            <div
-                              class="col-md-12 display-result"
-                              id="result-container"
-                            >
-                              <div class="date-converted">
-                                <span class="original-date">
-                                  २०८० असोज २८, Sunday
-                                </span>
-                                <br />
-                                <span class="result-date">
-                                  15 October , 2023
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="nav-profile"
-                        role="tabpanel"
-                        aria-labelledby="nav-profile-tab"
-                        tabindex="0"
-                      >
-                        <div class="converter-display-field">
-                          <div class="row d-flex select-item">
-                            <div
-                              class="col-md-12 convert-to-nepali convert-date"
-                            >
-                              <select
-                                id="month"
-                                name="txt-month"
-                                class="month form-select decor"
-                                size="1"
-                              >
-                                <option value="">January</option>
-                                <option value="">Feb</option>
-                                <option value="">March</option>
-                                <option value="">April</option>
-                                <option value="">May</option>
-                                <option value="">June</option>
-                                <option value="">July</option>
-                                <option value="">August</option>
-                                <option value="">September</option>
-                                <option value="">October</option>
-                                <option value="">November</option>
-                                <option value="">December</option>
-                              </select>
-                              <select
-                                id="day"
-                                name="txt-day"
-                                class="month-day form-select decor"
-                                size="1"
-                              >
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                                <option value="">7</option>
-                                <option value="">8</option>
-                                <option value="">9</option>
-                                <option value="">10</option>
-                                <option value="">11</option>
-                                <option value="">12</option>
-                                <option value="">13</option>
-                                <option value="">14</option>
-                                <option value="">15</option>
-                                <option value="">16</option>
-                                <option value="">17</option>
-                                <option value="">18</option>
-                                <option value="">19</option>
-                                <option value="">20</option>
-                                <option value="">21</option>
-                                <option value="">22</option>
-                                <option value="">23</option>
-                                <option value="">24</option>
-                                <option value="">25</option>
-                                <option value="">26</option>
-                                <option value="">27</option>
-                                <option value="">28</option>
-                                <option value="">29</option>
-                                <option value="">30</option>
-                                <option value="">31</option>
-                                <option value="">32</option>
-                              </select>
-                              <select
-                                id="year"
-                                name="txt-year"
-                                class="month-day form-select decor"
-                                size="1"
-                              >
-                                <option value="">2000</option>
-                                <option value="">2001</option>
-                                <option value="">2002</option>
-                                <option value="">2003</option>
-                                <option value="">2004</option>
-                                <option value="">2005</option>
-                                <option value="">2006</option>
-                                <option value="">2007</option>
-                                <option value="">2008</option>
-                                <option value="">2009</option>
-                                <option value="">2009</option>
-                                <option value="">2011</option>
-                                <option value="">2012</option>
-                                <option value="">2013</option>
-                                <option value="">2014</option>
-                                <option value="">2015</option>
-                                <option value="">2016</option>
-                                <option value="">2017</option>
-                                <option value="">2018</option>
-                                <option value="">2019</option>
-                                <option value="">2020</option>
-                                <option value="">2021</option>
-                                <option value="">2022</option>
-                                <option value="">2023</option>
-                                <option value="">2024</option>
-                                <option value="">2025</option>
-                                <option value="">2026</option>
-                                <option value="">2027</option>
-                                <option value="">2028</option>
-                                <option value="">2029</option>
-                                <option value="">2030</option>
-                                <option value="">2031</option>
-                                <option value="">2032</option>
-                                <option value="">2033</option>
-                                <option value="">2034</option>
-                                <option value="">2035</option>
-                                <option value="">2036</option>
-                                <option value="">2037</option>
-                                <option value="">2038</option>
-                                <option value="">2039</option>
-                                <option value="">2040</option>
-                                <option value="">2041</option>
-                                <option value="">2042</option>
-                                <option value="">2043</option>
-                                <option value="">2044</option>
-                                <option value="">2045</option>
-                                <option value="">2046</option>
-                                <option value="">2047</option>
-                                <option value="">2048</option>
-                                <option value="">2049</option>
-                                <option value="">2050</option>
-                                <option value="">2051</option>
-                                <option value="">2052</option>
-                              </select>
-                              <div class="convert-to-english-btn">
-                                <button
-                                  class="convert-date-btn btn"
-                                  id="convertdate"
-                                >
-                                  Convert
-                                </button>
-                              </div>
-                            </div>
-                            <div
-                              class="col-md-12 display-result"
-                              id="result-container"
-                            >
-                              <div class="date-converted">
-                                <span class="original-date">
-                                  २०८० असोज २८, Sunday
-                                </span>
-                                <br />
-                                <span class="result-date">
-                                  15 October , 2023
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-weather-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-weather-tab"
-                  tabindex="0"
-                >
-                  <script>
-                    (function (d, s, id) {
-                      if (d.getElementById(id)) {
-                        if (window.__TOMORROW__) {
-                          window.__TOMORROW__.renderWidget();
-                        }
-                        return;
-                      }
-                      const fjs = d.getElementsByTagName(s)[0];
-                      const js = d.createElement(s);
-                      js.id = id;
-                      js.src =
-                        "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-                      fjs.parentNode.insertBefore(js, fjs);
-                    })(document, "script", "tomorrow-sdk");
-                  </script>
-
-                  <div
-                    class="tomorrow"
-                    data-location-id=""
-                    data-language="EN"
-                    data-unit-system="METRIC"
-                    data-skin="dark"
-                    data-widget-type="aqiMini"
-                    style="
-                      padding-bottom: 22px;
-                      position: relative;
-                      pointer-events: none;
-                    "
-                  >
-                    <a
-                      href="https://www.tomorrow.io/weather-api/"
-                      rel="nofollow noopener noreferrer"
-                      target="_blank"
-                      style="
-                        position: absolute;
-                        bottom: 0;
-                        transform: translateX(-50%);
-                        left: 50%;
-                        display: none !important;
-                      "
-                    >
-                      <img
-                        alt="Powered by the Tomorrow.io Weather API"
-                        src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
-                        width="250"
-                        height="18"
-                        display="none"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-forex-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-forex-tab"
-                  tabindex="0"
-                >
-                  <iframe
-                    class="gold-silver-rate-tab"
-                    src="https://rat32.com/nepali-calendar/addons/gold-silver-rate.php"
-                    frameborder="0"
-                    scrolling="no"
-                    marginwidth="0"
-                    marginheight="0"
-                    style="
-                      border: none;
-                      overflow: hidden;
-                      width: 100%;
-                      max-width: 400px;
-                      height: 400px;
-                      margin-left: 345px;
-                    "
-                    allowtransparency="true"
-                  ></iframe>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-market-view-mv"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-market-view-tab"
-                  tabindex="0"
-                >
-                  <iframe
-                    src="https://nepalicalendar.rat32.com/vegetable/embed.php"
-                    frameborder="0"
-                    scrolling="yes"
-                    marginwidth="0"
-                    marginheight="0"
-                    style="
-                      border: none;
-                      overflow: hidden;
-                      width: 100%;
-                      height: 500px;
-                      border-radius: 5px;
-                      padding: 0px;
-                      margin: 0px;
-                    "
-                    allowtransparency="true"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- End of tab for mobile view responsive  -->
-
-        <div class="container-fluid laptop-view-container h-100">
+        <div class="container laptop-view-container h-100">
           <div class="row h-100">
             <div class="col left-nav">
               <div
-                class="d-flex align-items-center w-100 justify-content-between"
+                class="d-flex align-items-center w-100 justify-content-between left-nav-wrapper"
               >
                 <div
-                  class="nav flex-column nav-pills left-nav-div"
+                  class="nav nav-pills left-nav-div"
                   id="v-pills-tab"
                   role="tablist"
                   aria-orientation="vertical"
@@ -772,7 +72,7 @@
                     aria-controls="v-pills-home"
                     aria-selected="true"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       border_color
                     </span>
                     Roman to Nepali
@@ -786,7 +86,9 @@
                     aria-controls="v-pills-profile"
                     aria-selected="true"
                   >
-                    <span class="material-symbols-outlined"> edit </span>
+                    <span class="material-symbols-outlined btn-icon">
+                      edit
+                    </span>
                     Unicode to Preeti
                   </button>
 
@@ -799,7 +101,7 @@
                     aria-controls="v-pills-preeti-to-unicode"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       design_services
                     </span>
                     Preeti to Unicode
@@ -813,7 +115,7 @@
                     aria-controls="v-pills-date-converter"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       calendar_month
                     </span>
                     Date Converter
@@ -827,7 +129,7 @@
                     aria-controls="v-pills-weather"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined btn-icon">
                       partly_cloudy_day
                     </span>
                     Weather
@@ -841,7 +143,9 @@
                     aria-controls="v-pills-forex"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined"> database </span>
+                    <span class="material-symbols-outlined btn-icon">
+                      database
+                    </span>
                     Gold/Silver Rates
                   </button>
                   <button
@@ -853,7 +157,9 @@
                     aria-controls="v-pills-market-view"
                     aria-selected="false"
                   >
-                    <span class="material-symbols-outlined"> payments </span>
+                    <span class="material-symbols-outlined btn-icon">
+                      payments
+                    </span>
                     Market View
                   </button>
                 </div>
@@ -1218,6 +524,7 @@
                     tabindex="0"
                   >
                     <iframe
+                      class="gold-silver-rate-tab"
                       src="https://rat32.com/nepali-calendar/addons/gold-silver-rate.php"
                       frameborder="0"
                       scrolling="no"
@@ -1300,7 +607,6 @@
         </div>
       </section>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -1312,6 +618,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/nepali-date-converter/dist/nepali-date-converter.umd.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./kit-date-converter.js"></script>
     <script src="./kit-unicode.js"></script>
     <script src="./kit-nepalityping.js"></script>

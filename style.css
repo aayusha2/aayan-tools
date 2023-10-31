@@ -76,6 +76,8 @@ body {
 }
 
 .left-nav-div {
+  display: flex;
+  flex-direction: column;
   width: 25%;
   height: 100%;
   padding: 40px 20px !important;
@@ -271,12 +273,6 @@ body {
 /* css for responsive view in mobile */
 
 @media only screen and (max-width: 600px) {
-  .laptop-view-container {
-    display: none !important;
-  }
-
-  /* top section css for mobile-view  */
-
   main {
     height: 100%;
   }
@@ -296,6 +292,7 @@ body {
 
   .date-time {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 10px;
@@ -305,14 +302,20 @@ body {
     width: 50%;
   }
 
-  /* body part css for mobile-view  */
-
   .left-nav-tab {
     margin: 0px;
   }
-  .nav-div-mv .nav {
-    flex-wrap: nowrap;
+
+  .left-nav-wrapper {
+    flex-direction: column;
+  }
+
+  .left-nav-div {
+    flex-direction: row !important;
+    width: 100%;
+    flex-wrap: nowrap !important;
     overflow: scroll;
+    border: none;
   }
 
   .btn-icon {
@@ -324,7 +327,7 @@ body {
     width: 171px;
   }
 
-  .text-area-mv {
+  .text-area {
     margin-bottom: 50px;
     height: 316px;
   }
@@ -355,6 +358,9 @@ body {
 
   .display-result {
     padding: 30px 0px;
+  }
+  .result-date {
+    font-size: 25px !important;
   }
 
   .gold-silver-rate-tab {
