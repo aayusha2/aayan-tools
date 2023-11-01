@@ -316,6 +316,7 @@ body {
     flex-wrap: nowrap !important;
     overflow: scroll;
     border: none;
+    padding: 20px 20px !important;
   }
 
   .btn-icon {
@@ -324,12 +325,16 @@ body {
 
   .left-nav-button {
     font-size: 12px !important;
-    width: 171px;
+    width: 100vw;
   }
 
   .text-area {
     margin-bottom: 50px;
     height: 316px;
+  }
+
+  .text-area-div {
+    padding-left: 36px !important;
   }
 
   .convert-btn {
@@ -364,7 +369,20 @@ body {
   }
 
   .gold-silver-rate-tab {
-    margin: 40px 0px 40px 0px !important;
+    padding: 20px;
+    margin: 20px 0px 40px 0px !important;
+  }
+
+  .weather-div {
+    height: calc(100vh - 394px);
+  }
+
+  .tomorrow {
+    margin-top: 20px;
+    padding: 30px;
+  }
+  .market-view-div {
+    margin: 50px 8px;
   }
 
   /* start of footer css for mobile-view  */
