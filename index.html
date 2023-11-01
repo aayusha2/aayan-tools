@@ -55,7 +55,7 @@
           <div class="row h-100">
             <div class="col left-nav">
               <div
-                class="d-flex align-items-center w-100 justify-content-between left-nav-wrapper"
+                class="d-flex align-items-center w-100 sjustify-content-between left-nav-wrapper"
               >
                 <div
                   class="nav nav-pills left-nav-div"
@@ -63,112 +63,140 @@
                   role="tablist"
                   aria-orientation="vertical"
                 >
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-roman-to-nepali"
-                    role="tab"
-                    aria-controls="v-pills-home"
-                    aria-selected="true"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      border_color
-                    </span>
-                    Roman to Nepali
-                  </button>
-                  <button
-                    class="nav-link left-nav-button active"
-                    id="v-pills-profile-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-unicode-to-preeti"
-                    role="tab"
-                    aria-controls="v-pills-profile"
-                    aria-selected="true"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      edit
-                    </span>
-                    Unicode to Preeti
-                  </button>
+                  <div class="nav-btn-div">
+                    <button
+                      class="nav-link left-nav-button active"
+                      id="v-pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-roman-to-nepali"
+                      role="tab"
+                      aria-controls="v-pills-home"
+                      aria-selected="true"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        border_color
+                      </span>
+                      Roman to Nepali
+                    </button>
+                    <button
+                      class="nav-link left-nav-button"
+                      id="v-pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-unicode-to-preeti"
+                      role="tab"
+                      aria-controls="v-pills-profile"
+                      aria-selected="false"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        edit
+                      </span>
+                      Unicode to Preeti
+                    </button>
 
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-preeti-to-unicode-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-preeti-to-unicode"
-                    role="tab"
-                    aria-controls="v-pills-preeti-to-unicode"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      design_services
-                    </span>
-                    Preeti to Unicode
-                  </button>
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-date-converter-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-date-converter"
-                    role="tab"
-                    aria-controls="v-pills-date-converter"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      calendar_month
-                    </span>
-                    Date Converter
-                  </button>
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-weather-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-weather"
-                    role="tab"
-                    aria-controls="v-pills-weather"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      partly_cloudy_day
-                    </span>
-                    Weather
-                  </button>
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-forex-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-forex"
-                    role="tab"
-                    aria-controls="v-pills-forex"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      database
-                    </span>
-                    Gold/Silver Rate
-                  </button>
-                  <button
-                    class="nav-link left-nav-button"
-                    id="v-pills-market-view-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-market-view"
-                    role="tab"
-                    aria-controls="v-pills-market-view"
-                    aria-selected="false"
-                  >
-                    <span class="material-symbols-outlined btn-icon">
-                      payments
-                    </span>
-                    Market View
-                  </button>
+                    <button
+                      class="nav-link left-nav-button"
+                      id="v-pills-preeti-to-unicode-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-preeti-to-unicode"
+                      role="tab"
+                      aria-controls="v-pills-preeti-to-unicode"
+                      aria-selected="false"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        design_services
+                      </span>
+                      Preeti to Unicode
+                    </button>
+                    <button
+                      class="nav-link left-nav-button"
+                      id="v-pills-date-converter-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-date-converter"
+                      role="tab"
+                      aria-controls="v-pills-date-converter"
+                      aria-selected="false"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        calendar_month
+                      </span>
+                      Date Converter
+                    </button>
+                    <button
+                      class="nav-link left-nav-button"
+                      id="v-pills-weather-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-weather"
+                      role="tab"
+                      aria-controls="v-pills-weather"
+                      aria-selected="false"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        partly_cloudy_day
+                      </span>
+                      Weather
+                    </button>
+                    <button
+                      class="nav-link left-nav-button"
+                      id="v-pills-forex-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-forex"
+                      role="tab"
+                      aria-controls="v-pills-forex"
+                      aria-selected="false"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        database
+                      </span>
+                      Gold/Silver Rate
+                    </button>
+                    <button
+                      class="nav-link left-nav-button"
+                      id="v-pills-market-view-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-market-view"
+                      role="tab"
+                      aria-controls="v-pills-market-view"
+                      aria-selected="false"
+                    >
+                      <span class="material-symbols-outlined btn-icon">
+                        payments
+                      </span>
+                      Market View
+                    </button>
+                  </div>
                 </div>
                 <div class="tab-content left-nav-tab" id="v-pills-tabContent">
                   <div
                     class="tab-pane fade show active"
-                    id="v-pills-unicode-to-preeti"
+                    id="v-pills-roman-to-nepali"
                     role="tabpanel"
                     aria-labelledby="v-pills-home-tab"
+                    tabindex="0"
+                  >
+                    <div class="col-md-12">
+                      <div class="row w-100">
+                        <div class="col-md-12 text-area-div">
+                          <label
+                            for="exampleFormControlTextarea1"
+                            class="form-label"
+                            >Roman</label
+                          >
+                          <textarea
+                            class="form-control text-area"
+                            id="input_tool"
+                            oninput="replacePeriodWithDanda(this)"
+                            rows="12"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-unicode-to-preeti"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-profile-tab"
                     tabindex="0"
                   >
                     <div class="col-md-12">
@@ -205,31 +233,7 @@
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-roman-to-nepali"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-profile-tab"
-                    tabindex="0"
-                  >
-                    <div class="col-md-12">
-                      <div class="row w-100">
-                        <div class="col-md-12 text-area-div">
-                          <label
-                            for="exampleFormControlTextarea1"
-                            class="form-label"
-                            >Roman</label
-                          >
-                          <textarea
-                            class="form-control text-area"
-                            id="input_tool"
-                            oninput="replacePeriodWithDanda(this)"
-                            rows="12"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div
                     class="tab-pane fade"
                     id="v-pills-preeti-to-unicode"

@@ -20,8 +20,38 @@
 #preeti_text {
   font-family: Aakriti;
 }
+
+#preeti-content:focus {
+  box-shadow: none;
+  border-color: #7493b0;
+}
+
 #input_tool {
   font-family: Mukta;
+}
+
+#input_tool:focus {
+  box-shadow: none;
+  border-color: #7493b0;
+}
+
+#unicode_content {
+  font-family: Mukta;
+}
+
+#unicode_content:focus {
+  box-shadow: none;
+  border-color: #7493b0;
+}
+
+#preeti_text:focus {
+  box-shadow: none;
+  border-color: #7493b0;
+}
+
+#unicode_text:focus {
+  box-shadow: none;
+  border-color: #7493b0;
 }
 
 main {
@@ -85,6 +115,7 @@ body {
 }
 
 .left-nav-button {
+  width: 100%;
   margin-top: 15px;
   display: flex !important;
   align-items: center !important;
@@ -117,11 +148,6 @@ body {
 
 .text-area {
   height: 550px;
-}
-
-#exampleFormControlTextarea1:focus {
-  box-shadow: none;
-  border-color: #4f6982;
 }
 
 /* date converter tab */
@@ -299,6 +325,7 @@ body {
     padding: 10px 40px;
   }
   .logo-png {
+    margin-right: 0px;
     width: 50%;
   }
 
@@ -317,6 +344,11 @@ body {
     overflow: scroll;
     border: none;
     padding: 20px 20px !important;
+  }
+
+  .nav-btn-div {
+    display: flex;
+    width: 1200px;
   }
 
   .btn-icon {
@@ -379,7 +411,7 @@ body {
 
   .tomorrow {
     margin-top: 20px;
-    padding: 30px;
+    padding: 10px;
   }
   .market-view-div {
     margin: 50px 8px;
@@ -409,17 +441,17 @@ body {
   }
 
   .end-part1 .text {
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 10px;
   }
 
   img,
   svg {
     vertical-align: middle;
+    margin-right: 12px;
   }
 
-  img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-  }
+  /* img {
+    margin-right: 12px;
+  } */
 }
