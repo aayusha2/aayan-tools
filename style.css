@@ -95,6 +95,10 @@ body {
 
 /* ==================== start of left-nav ================== */
 
+.form-select {
+  height: 64px;
+}
+
 input#day {
   background-image: none;
 }
@@ -216,6 +220,8 @@ input#year:focus {
 .convert-date-btn {
   background-color: #59b6cd !important;
   padding: 8px 26px !important;
+  height: 64px;
+  width: 140px;
 }
 
 .convert-date-btn:hover {
@@ -365,11 +371,13 @@ input#year:focus {
     overflow: scroll;
     border: none;
     padding: 20px 20px !important;
+    background-color: #e3f2f6;
   }
 
   .nav-btn-div {
     display: flex;
-    width: 1200px;
+    width: 1350px;
+    gap: 25px;
   }
 
   .btn-icon {
@@ -379,6 +387,7 @@ input#year:focus {
   .left-nav-button {
     font-size: 12px !important;
     width: 100vw;
+    margin-top: 0px;
   }
 
   .text-area {
