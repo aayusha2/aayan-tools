@@ -95,6 +95,27 @@ body {
 
 /* ==================== start of left-nav ================== */
 
+input#day {
+  background-image: none;
+}
+
+select#month:focus {
+  border-color: #7a92ad;
+  box-shadow: none;
+}
+
+input#day:focus {
+  border-color: #7a92ad;
+  box-shadow: none;
+}
+input#year {
+  background-image: none;
+}
+input#year:focus {
+  border-color: #7a92ad;
+  box-shadow: none;
+}
+
 .left-nav {
   font-size: 15px;
   display: flex;
@@ -406,7 +427,7 @@ body {
   }
 
   .weather-div {
-    height: calc(100vh - 394px);
+    height: calc(100vh - 370px);
   }
 
   .tomorrow {
